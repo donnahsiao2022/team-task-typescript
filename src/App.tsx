@@ -3,8 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import Input from './components/Input.tsx';
+
 function App() {
   const [count, setCount] = useState(0)
+  const [text, setText] = useState('');
+
+  const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setText(e.target.value);
+  }
 
   return (
     <>
@@ -17,6 +24,8 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <p>{text}</p>
+      <Input id="SanpleText" text="這是一個 input" value={text} onChangeHandler={onChangeHandler} />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
