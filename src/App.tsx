@@ -17,7 +17,8 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const result = await axios.get('https://randomuser.me/api/')
+      console.log(process.env.REACT_APP_API_BASE_URL)
+      const result = await axios.get(`${process.env.REACT_APP_API_BASE_URL}`)
       console.log(result);
     })();
   }, [])
