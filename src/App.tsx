@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import axios from 'axios';
+
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -12,6 +14,13 @@ function App() {
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
   }
+
+  useEffect(() => {
+    (async () => {
+      const result = await axios.get('https://randomuser.me/api/')
+      console.log(result);
+    })();
+  }, [])
 
   return (
     <>
