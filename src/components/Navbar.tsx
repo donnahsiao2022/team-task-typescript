@@ -1,6 +1,11 @@
 import { useRef } from "react";
 
-const Navbar = () => {
+type NavbarProps = {
+  isShowMenu?: boolean;
+  isShowBackgroundBlack?: boolean;
+};
+
+const Navbar = ({ isShowMenu = true, isShowBackgroundBlack = false }: NavbarProps) => {
   const desktopNavRef = useRef<HTMLElement>(null);
   const mobileNavRef = useRef<HTMLElement>(null);
 
@@ -34,7 +39,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="py-5 fixed-top" ref={desktopNavRef}>
+      <nav className={`py-5 fixed-top position-absolute ${isShowBackgroundBlack ? 'bg-dark' : ''}`} ref={desktopNavRef}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
             <a className="me-0 py-0 d-inline-block" href="#">
@@ -45,7 +50,7 @@ const Navbar = () => {
               <div className="bar_icon_line_2"></div>
               <div className="bar_icon_line_3"></div>
             </div>
-            <ul className="mb-0 list-unstyled d-none d-md-flex justify-content-center align-items-center text-white">
+            <ul className={`mb-0 list-unstyled d-none justify-content-center align-items-center text-white ${isShowMenu ? 'd-md-flex' : 'd-md-none'}`}>
               <li className="me-3 d-flex">
                 <a className="p-3 text-decoration-none text-white fw-bold" href="#">客房旅宿</a>
               </li>
@@ -59,7 +64,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <nav style={{ transition: 'all .5s linear', zIndex: -1 }} className="p-4 opacity-0 offcanvas-backdrop" ref={mobileNavRef}>
+      <nav style={{ transition: 'all .5s linear', zIndex: -1 }} className="p-4 opacity-0 offcanvas-backdrop bg-dark" ref={mobileNavRef}>
         <ul className="mb-0 h-100 list-unstyled d-flex flex-column d-md-none justify-content-center align-items-center text-white">
           <li className="mb-3 w-100 d-flex justify-content-center align-items-center">
             <a className="p-3 w-100 d-flex justify-content-center align-items-center text-decoration-none text-white fw-bold" href="#">客房旅宿</a>
