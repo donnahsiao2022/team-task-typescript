@@ -1,6 +1,7 @@
 @import "bootstrap/scss/functions";
 
 // Include any default variable overrides here
+@import "./override-variables";
 
 @import "./variables";
 @import "./variables-dark";

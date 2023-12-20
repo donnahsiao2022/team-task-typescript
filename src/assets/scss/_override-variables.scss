@@ -1,0 +1,61 @@
+$font-family-sans-serif:      "Noto Serif TC", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 2;
+$h4-font-size: $font-size-base * 1.75;
+$h5-font-size: $font-size-base * 1.5;
+$h6-font-size: $font-size-base * 1.25;
+
+$primary-100: #FAF7F5;
+$primary-200: #F1EAE4;
+$primary-300: #E1D1C2;
+$primary-400: #AE9984;
+$primary: #BF9D7D;
+$primary-600: #7B6651;
+
+$green-100: #E8FEE7;
+$green-200: #BCFBBD;
+$green: #52DD7E;
+$green-600: #299F65;
+
+$cyan-100: #E6FBFE;
+$cyan-200: #B1EFFD;
+$cyan: #3BADEF;
+$cyan-600: #1D66AC;
+
+$red-100: #FDECEF;
+$red-200: #F5CCD1;
+$red: #DA3E51;
+$red-600: #C22538;
+
+$gray-100: #F9F9F9;
+$gray-400: #ECECEC;
+$gray-600: #909090;
+$gray-800: #4B4B4B;
+$gray-900: #140F0A;
+
+$nav-link-font-weight: 700;
+
+$border-radius: .5rem;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.25,
+  5: $spacer * 1.5,
+  6: $spacer * 2,
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1760px
+);
