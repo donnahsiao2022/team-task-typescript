@@ -1,0 +1,42 @@
+.bar_icon {
+  &_line {
+    &_1,
+    &_2,
+    &_3 {
+      width: 35px;
+      height: 5px;
+      background: #fff;
+    }
+
+    &_2 {
+      margin: 6px 0;
+    }
+  }
+}
+
+.x_icon {
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  width: 28px;
+  height: 28px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 5px;
+    background: #fff;
+  }
+
+  &::before {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+
+  &::after {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+}
