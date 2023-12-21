@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 type NavbarProps = {
   isShowMenu?: boolean;
@@ -42,9 +43,9 @@ const Navbar = ({ isShowMenu = true, isShowBackgroundBlack = false }: NavbarProp
       <nav className={`py-5 fixed-top position-absolute ${isShowBackgroundBlack ? 'bg-dark' : ''}`} ref={desktopNavRef}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
-            <a className="me-0 py-0 d-inline-block" href="#">
+            <Link className="me-0 py-0 d-inline-block" to='/'>
               <img width="196" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/logo.png" alt="" />
-            </a>
+            </Link>
             <div className="bar_icon d-block d-md-none" onClick={barIconClickHandler}>
               <div className="bar_icon_line_1"></div>
               <div className="bar_icon_line_2"></div>
