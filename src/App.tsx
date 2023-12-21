@@ -4,6 +4,7 @@ import {
   Login,
   SignUp,
   Room,
+  RoomDetail,
   NotFound
 } from './pages';
 
@@ -16,6 +17,7 @@ const App = () => {
           <Route path='/login' element={<Login />}></Route>
           <Route path='/signup' element={<SignUp />}></Route>
           <Route path='/room' element={<Room />}></Route>
+          <Route path='/room_detail' element={<RoomDetail />}></Route>
           <Route path='*' element={<NotFound />}></Route>
         </Routes>
       </div>
