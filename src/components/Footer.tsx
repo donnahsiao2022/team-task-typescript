@@ -11,13 +11,13 @@ const Footer = () => {
             <div className="col-9">
               <div className="d-flex justify-content-between">
                 <div>
-                  <div className="mb-7">
+                  <figure className="mb-7">
                     <img width="196" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/logo.png" alt="" />
-                  </div>
-                  <div className='mb-8'>
+                  </figure>
+                  <figure className='mb-8'>
                     <img className='me-3' src={LineIcon} alt="" />
                     <img src={IgIcon} alt="" />
-                  </div>
+                  </figure>
                   <p className='mb-0'>806023 台灣高雄市新興區六角路123號</p>
                 </div>
                 <div>
@@ -52,13 +52,13 @@ const Footer = () => {
       <section style={{ paddingLeft: '12px', paddingRight: '12px' }} className="py-8 d-block d-xl-none">
         <div className="row justify-content-center">
           <div className="col-12 col-sm-7 col-lg-4">
-            <div className="mb-7">
+            <figure className="mb-7">
               <img width="196" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/logo.png" alt="" />
-            </div>
-            <div className='mb-7'>
+            </figure>
+            <figure className='mb-7'>
               <img className='me-3' src={LineIcon} alt="" />
               <img src={IgIcon} alt="" />
-            </div>
+            </figure>
             <div className="mb-3">
               <p className='mb-2 fw-bold'>TEL</p>
               <p className="mb-0">+886-7-1234567</p>
