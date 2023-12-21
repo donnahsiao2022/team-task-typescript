@@ -4,7 +4,7 @@ import { Home, NotFound } from './pages';
 const App = () => {
   return (
     <>
-      <div className="bg-dark">
+      <div className="bg-dark text-white">
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='*' element={<NotFound />}></Route>

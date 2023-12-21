@@ -51,7 +51,7 @@ const Navbar = ({ isEscapeDocumentFlow = true, isShowMenu = true }: NavbarProps)
               <div className="bar_icon_line_2"></div>
               <div className="bar_icon_line_3"></div>
             </div>
-            <ul className={`mb-0 list-unstyled d-none justify-content-center align-items-center text-white ${isShowMenu ? 'd-md-flex' : 'd-md-none'}`}>
+            <ul className={`mb-0 list-unstyled d-none justify-content-center align-items-center ${isShowMenu ? 'd-md-flex' : 'd-md-none'}`}>
               <li className="me-3 d-flex">
                 <a className="p-3 text-decoration-none text-white fw-bold" href="#">客房旅宿</a>
               </li>
@@ -65,7 +65,7 @@ const Navbar = ({ isEscapeDocumentFlow = true, isShowMenu = true }: NavbarProps)
           </div>
         </div>
       </nav>
-      <nav style={{ transition: 'all .5s linear', zIndex: -1 }} className="p-4 opacity-0 offcanvas-backdrop bg-dark" ref={mobileNavRef}>
+      <nav style={{ transition: 'all .5s linear', zIndex: -1 }} className="p-4 opacity-0 offcanvas-backdrop" ref={mobileNavRef}>
         <ul className="mb-0 h-100 list-unstyled d-flex flex-column d-md-none justify-content-center align-items-center text-white">
           <li className="mb-3 w-100 d-flex justify-content-center align-items-center">
             <a className="p-3 w-100 d-flex justify-content-center align-items-center text-decoration-none text-white fw-bold" href="#">客房旅宿</a>

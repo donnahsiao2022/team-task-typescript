@@ -18,7 +18,7 @@ const NotFound = () => {
   return (
     <>
       <Navbar isEscapeDocumentFlow={false} />
-      <div className="py-5 position-relative bg-dark text-white">
+      <div className="py-5 position-relative">
         <img className="img-fluid" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/bg.png" alt="" />
         <img className="img-fluid" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/line3.png" alt="" />
         <div className="position-absolute top-50 start-50 translate-middle">
