@@ -56,7 +56,7 @@ const Navbar = ({ isEscapeDocumentFlow = true, isShowMenu = true }: NavbarProps)
                 <a className="p-3 text-decoration-none text-white fw-bold" href="#">客房旅宿</a>
               </li>
               <li className="me-3 d-flex">
-                <a className="p-3 text-decoration-none text-white fw-bold" href="#">會員登入</a>
+                <Link className="p-3 text-decoration-none text-white fw-bold" to="/login">會員登入</Link>
               </li>
               <li className="d-flex">
                 <a className="px-6 py-3 btn btn-primary text-white fw-bold" href="#">立即訂房</a>
@@ -71,7 +71,7 @@ const Navbar = ({ isEscapeDocumentFlow = true, isShowMenu = true }: NavbarProps)
             <a className="p-3 w-100 d-flex justify-content-center align-items-center text-decoration-none text-white fw-bold" href="#">客房旅宿</a>
           </li>
           <li className="mb-3 w-100 d-flex justify-content-center align-items-center">
-            <a className="p-3 w-100 d-flex justify-content-center align-items-center text-decoration-none text-white fw-bold" href="#">會員登入</a>
+            <Link className="p-3 w-100 d-flex justify-content-center align-items-center text-decoration-none text-white fw-bold" to="/login">會員登入</Link>
           </li>
           <li className="w-100 d-flex justify-content-center align-items-center">
             <a className="px-6 py-3 w-100 d-flex justify-content-center align-items-center btn btn-primary text-white fw-bold" href="#">立即訂房</a>
