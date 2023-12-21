@@ -6,6 +6,7 @@ import {
   Room,
   RoomDetail,
   ReserveRoom,
+  ReserveRoomSuccess,
   NotFound
 } from './pages';
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/room' element={<Room />}></Route>
           <Route path='/room_detail' element={<RoomDetail />}></Route>
           <Route path='/reserve' element={<ReserveRoom />}></Route>
+          <Route path='/reserve_success' element={<ReserveRoomSuccess />}></Route>
           <Route path='*' element={<NotFound />}></Route>
         </Routes>
       </div>
