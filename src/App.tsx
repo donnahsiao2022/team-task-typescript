@@ -9,6 +9,7 @@ import {
   ReserveRoom,
   ReserveRoomSuccess,
   MemberInfo,
+  MemberOrder,
   NotFound
 } from './pages';
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path='/reserve_success' element={<ReserveRoomSuccess />}></Route>
           <Route path='/member' element={<MemberLayout />}>
             <Route index element={<MemberInfo />}></Route>
+            <Route path='order' element={<MemberOrder />}></Route>
           </Route>
           <Route path='*' element={<NotFound />}></Route>
         </Routes>
