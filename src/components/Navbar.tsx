@@ -2,18 +2,18 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 type NavbarProps = {
+  isEscapeDocumentFlow?: boolean;
   isShowMenu?: boolean;
-  isShowBackgroundBlack?: boolean;
 };
 
-const Navbar = ({ isShowMenu = true, isShowBackgroundBlack = false }: NavbarProps) => {
+const Navbar = ({ isEscapeDocumentFlow = true, isShowMenu = true }: NavbarProps) => {
   const desktopNavRef = useRef<HTMLElement>(null);
   const mobileNavRef = useRef<HTMLElement>(null);
 
   const barIconClickHandler = () => {
     if (desktopNavRef.current) {
-      desktopNavRef.current.classList.remove('d-block');
-      desktopNavRef.current.classList.add('d-none');
+      desktopNavRef.current.classList.remove('visible');
+      desktopNavRef.current.classList.add('invisible');
     }
 
     if (mobileNavRef.current) {
@@ -26,8 +26,8 @@ const Navbar = ({ isShowMenu = true, isShowBackgroundBlack = false }: NavbarProp
 
   const xIconClickHandler = () => {
     if (desktopNavRef.current) {
-      desktopNavRef.current.classList.remove('d-none');
-      desktopNavRef.current.classList.add('d-block');
+      desktopNavRef.current.classList.remove('invisible');
+      desktopNavRef.current.classList.add('visible');
     }
 
     if (mobileNavRef.current) {
@@ -40,7 +40,7 @@ const Navbar = ({ isShowMenu = true, isShowBackgroundBlack = false }: NavbarProp
 
   return (
     <>
-      <nav className={`py-5 fixed-top position-absolute ${isShowBackgroundBlack ? 'bg-dark' : ''}`} ref={desktopNavRef}>
+      <nav className={`py-5 fixed-top ${isEscapeDocumentFlow ? 'position-absolute' : 'position-relative'}`} ref={desktopNavRef}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
             <Link className="me-0 py-0 d-inline-block" to='/'>
