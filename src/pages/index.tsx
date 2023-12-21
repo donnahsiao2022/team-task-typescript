@@ -5,4 +5,5 @@ export { default as Room } from './Room';
 export { default as RoomDetail } from './RoomDetail';
 export { default as ReserveRoom } from './ReserveRoom';
 export { default as ReserveRoomSuccess } from './ReserveRoomSuccess';
+export { default as MemberInfo } from './MemberInfo';
 export { default as NotFound } from './NotFound';
