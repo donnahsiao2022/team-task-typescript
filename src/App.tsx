@@ -5,6 +5,7 @@ import {
   SignUp,
   Room,
   RoomDetail,
+  ReserveRoom,
   NotFound
 } from './pages';
 
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/signup' element={<SignUp />}></Route>
           <Route path='/room' element={<Room />}></Route>
           <Route path='/room_detail' element={<RoomDetail />}></Route>
+          <Route path='/reserve' element={<ReserveRoom />}></Route>
           <Route path='*' element={<NotFound />}></Route>
         </Routes>
       </div>
