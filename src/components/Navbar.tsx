@@ -53,7 +53,7 @@ const Navbar = ({ isEscapeDocumentFlow = true, isShowMenu = true }: NavbarProps)
             </div>
             <ul className={`mb-0 list-unstyled d-none justify-content-center align-items-center ${isShowMenu ? 'd-md-flex' : 'd-md-none'}`}>
               <li className="me-3 d-flex">
-                <a className="p-3 text-decoration-none text-white fw-bold" href="#">客房旅宿</a>
+                <Link className="p-3 text-decoration-none text-white fw-bold" to='/room'>客房旅宿</Link>
               </li>
               <li className="me-3 d-flex">
                 <Link className="p-3 text-decoration-none text-white fw-bold" to="/login">會員登入</Link>
@@ -68,7 +68,7 @@ const Navbar = ({ isEscapeDocumentFlow = true, isShowMenu = true }: NavbarProps)
       <nav style={{ transition: 'all .5s linear', zIndex: -1 }} className="p-4 opacity-0 offcanvas-backdrop" ref={mobileNavRef}>
         <ul className="mb-0 h-100 list-unstyled d-flex flex-column d-md-none justify-content-center align-items-center text-white">
           <li className="mb-3 w-100 d-flex justify-content-center align-items-center">
-            <a className="p-3 w-100 d-flex justify-content-center align-items-center text-decoration-none text-white fw-bold" href="#">客房旅宿</a>
+            <Link className="p-3 w-100 d-flex justify-content-center align-items-center text-decoration-none text-white fw-bold" to="/room">客房旅宿</Link>
           </li>
           <li className="mb-3 w-100 d-flex justify-content-center align-items-center">
             <Link className="p-3 w-100 d-flex justify-content-center align-items-center text-decoration-none text-white fw-bold" to="/login">會員登入</Link>
