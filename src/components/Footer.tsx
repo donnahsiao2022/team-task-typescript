@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       { /* Desktop */ }
-      <section className="pt-8 pb-9 d-none d-xl-block bg-dark text-white">
+      <section className="pt-8 pb-9 d-none d-xl-block text-white">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-9">
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </section>
       { /* Mobile */ }
-      <section style={{ paddingLeft: '12px', paddingRight: '12px' }} className="py-8 d-block d-xl-none bg-dark text-white">
+      <section style={{ paddingLeft: '12px', paddingRight: '12px' }} className="py-8 d-block d-xl-none text-white">
         <div className="row justify-content-center">
           <div className="col-12 col-sm-7 col-lg-4">
             <div className="mb-7">
