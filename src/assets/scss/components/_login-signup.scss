@@ -1,0 +1,21 @@
+.login_signUp_lineImg_wrap {
+  top: 32px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @include media-breakpoint-up(xxl) {
+    top: 72px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.login_signUp_form_wrap {
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  @include media-breakpoint-up(sm) {
+    width: 416px;
+  }
+}
