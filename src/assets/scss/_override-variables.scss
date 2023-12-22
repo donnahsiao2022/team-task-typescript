@@ -40,9 +40,20 @@ $gray-600: #909090;
 $gray-800: #4B4B4B;
 $gray-900: #140F0A;
 
+$light: $gray-400;
+
 $nav-link-font-weight: 700;
 
 $border-radius: .5rem;
+
+$input-placeholder-color: $gray-600;
+
+$input-btn-padding-y: 1rem;
+$input-btn-padding-x: 1rem;
+$input-btn-border-width: 0;
+
+$form-check-input-width: 1.5em;
+$form-check-min-height: 1.5em;
 
 $spacer: 1rem;
 $spacers: (
@@ -55,7 +66,8 @@ $spacers: (
   6: $spacer * 2,
   7: $spacer * 2.5,
   8: $spacer * 5,
-  9: $spacer * 7.5
+  9: $spacer * 7.5,
+  10: $spacer * 10
 ) !default;
 
 $container-max-widths: (
