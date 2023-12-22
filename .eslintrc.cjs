@@ -11,6 +11,19 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     'semi': ['error', 'always'],
+    '@typescript-eslint/member-delimiter-style': [
+      'error',
+      {
+        'multiline': { 
+          'delimiter': 'semi',
+          'requireLast': true,
+        },
+        'singleline': {
+          'delimiter': 'semi',
+          'requireLast': false,
+        },
+      }
+    ],
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
