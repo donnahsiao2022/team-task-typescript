@@ -40,7 +40,7 @@ const Navbar = ({ isEscapeDocumentFlow = true, isShowMenu = true }: NavbarProps)
 
   return (
     <>
-      <nav className={`py-5 fixed-top ${isEscapeDocumentFlow ? 'position-absolute' : 'position-relative'}`} ref={desktopNavRef}>
+      <nav className={`py-3 py-xxl-5 fixed-top ${isEscapeDocumentFlow ? 'position-absolute' : 'position-relative'}`} ref={desktopNavRef}>
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
             <Link className="me-0 py-0 d-inline-block" to='/'>
