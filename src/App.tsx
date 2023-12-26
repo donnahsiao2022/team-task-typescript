@@ -1,9 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
 import MemberLayout from './components/MemberLayout';
+import LoginSignUpLayout from './components/LoginSignUpLayout';
 import {
   Home,
   Login,
   SignUp,
+  SignUpFillInfo,
   Room,
   RoomDetail,
   ReserveRoom,
@@ -19,8 +21,13 @@ const App = () => {
       <div className="bg-dark text-white">
         <Routes>
           <Route path='/' element={<Home />}></Route>
-          <Route path='/login' element={<Login />}></Route>
-          <Route path='/signup' element={<SignUp />}></Route>
+          <Route path='/login' element={<LoginSignUpLayout />}>
+            <Route index element={<Login />}></Route>
+          </Route>
+          <Route path='/signup' element={<LoginSignUpLayout />}>
+            <Route index element={<SignUp />}></Route>
+            <Route path='fill_info' element={<SignUpFillInfo />}></Route>
+          </Route>
           <Route path='/room' element={<Room />}></Route>
           <Route path='/room_detail' element={<RoomDetail />}></Route>
           <Route path='/reserve' element={<ReserveRoom />}></Route>
